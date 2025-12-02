@@ -52,9 +52,18 @@ end
 ;
 pro import_gsidem_gml
 
+<<<<<<< HEAD
   indir = 'E:\tp_proc\gsidem\data\erimo\10m\xml'
   out_tiff = 'E:\tp_proc\gsidem\data\erimo\10m\sarscape\erimo_gsidem10.tif'
   
   convert_gsidem_gml_to_tiff, INDIR=indir, OUT_TIFF=out_tiff, MESH_10=mesh_10, DUMMUY0=dummy0
+=======
+  indir = 'E:\GSIDEM\data\fujibashi\5m\xml'
+  ;indir = dialog_pickfile(/DIRECTORY)
+  out_tiff = 'E:\GSIDEM\data\fujibashi\5m\envi\fujibashi_gsi5m_envi.dat'
+  ;
+  convert_gsidem_gml_to_tiff, INDIR=indir, OUT_TIFF=out_tiff, MESH_10=mesh_10, DUMMUY0=dummy0
+
+>>>>>>> 74630b8e594fb1a6f0dc0846f43733d240f3b3e0
 
 end
