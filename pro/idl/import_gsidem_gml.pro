@@ -49,8 +49,7 @@ pro import_gsidem_gml
   ;indir = dialog_pickfile(/DIRECTORY)
   out_tiff = 'E:\GSIDEM\data\fujibashi\5m\envi\fujibashi_gsi5m_envi.dat'
   ;
-
-  convert_gsidem_gml_to_tiff, INDIR=indir, OUT_TIFF=out_ttif, MESH_10=mesh_10, DUMMUY0=dummy0
+  convert_gsidem_gml_to_tiff, INDIR=indir, OUT_TIFF=out_tiff, MESH_10=mesh_10, DUMMUY0=dummy0
 
 
 end
