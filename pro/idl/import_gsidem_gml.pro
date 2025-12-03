@@ -135,7 +135,8 @@ pro import_gsidem_gml
   out_tiff = 'E:\tp_proc\gsidem\data\erimo\10m\sarscape\erimo_gsidem.tif'
   ;
   convert_gsidem_gml_to_tiff, IN_DIR=in_dir, OUT_TIFF=out_tiff, /MESH_10, /DUMMUY0
-
+  ;+
+  ; for SARscape process
   convert_geotiff_dem_to_ellipsoid, out_tiff
 
   print, 'import completed'
